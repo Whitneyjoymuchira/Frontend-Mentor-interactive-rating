@@ -15,10 +15,10 @@
     box-sizing: border-box;
 }
 
-.text{
+.text, .thankyou-text{
     font-size: 15px;
     margin-bottom: 1rem;
-    font-family: 'Overpass', sans-serif;
+    font-family: inherit;
     font-weight: 300;
     text-align: center;
 }
@@ -43,12 +43,12 @@ body{
     color: var(--white);
 }
 
-.container{
+.container, .thankyou-state{
     
     background-color: var(--dark-blue);
     padding: 1.25rem 1.25rem 2rem;
-    border-radius: 1.5rem;
-    height:320px;
+    border-radius: 10px;
+    height:345px;
     width: 290px;
 
   
@@ -69,6 +69,7 @@ body{
     border: none;
     border-width: 80px;
     cursor: pointer;
+    font-family: inherit;
 }
 ul{
     display: flex;
@@ -101,6 +102,9 @@ ul{
     color: var(--orange);
 }
 
+.thankyou-state{
+    margin-top: 10px;
+}
 
 @media (min-width:500px){
     .container{
@@ -108,8 +112,23 @@ ul{
     }
 }
 
+.rating{
+    margin: 20px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(62, 62, 88);
+    color: var(--orange);
+    font-size: 15px;
+    padding:5px;
+}
 
-
+.thankyou{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.thankyou-text{
+    margin-bottom: 20px;
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
