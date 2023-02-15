@@ -23,6 +23,7 @@
     text-align: center;
     line-height: 1.8;
     color: var(--light-grey);
+ 
 }
 .container h1{
     margin: 10px ;
@@ -34,6 +35,7 @@
 
 body{
     font-family:'Overpass', sans-serif;
+    font-size: 15px;
     background-color:var(--very-dark-blue);
     display: flex;
     flex-direction: column;
@@ -41,22 +43,22 @@ body{
     justify-content: center;
     padding: 1.25rem;
     text-align: center;
-    height: calc(100vh - 0.1px);
+    min-height: 100vh;
     color: var(--white);
     margin: 1.5rem;
 }
+img{
+    max-width: 100%;
+}
 
-.container, .thankyou-state{
+.container,.thankyou-state{
     
     background-color: var(--dark-blue);
-    padding: 1.25rem 1.25rem 2rem;
+    padding: 2rem 1.5rem;
     border-radius: 10px;
-    height:345px;
-    width: 290px;
-
-
-  
+    max-width:400px;
 }
+
 .star{
     display: flex;
     align-items: flex-start;
@@ -107,19 +109,28 @@ ul{
 .container ul li button:focus{
     background-color: var(--medium-grey);
 }
-.submit{
-    margin-top: 30px;
+.submit, .rate-again{
     background-color: var(--orange);
-    border-radius: 20px;
-    padding: 10px;
     cursor: pointer;
+    width: 100%;
+    padding:0.625rem 2rem 0.5rem;
+    border-radius: 30px;
+    border: none;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1rem;
     
 }
-.submit:hover{
+
+    .submit:hover{
     background-color: var(--white);
     color: var(--orange);
 }
 
+.rate-again:hover{
+    background-color: white;
+    color: var(--orange)
+}
 .thankyou-state{
     margin-top: 10px;
 }
@@ -140,9 +151,7 @@ ul{
     font-size: 18px;
     margin-bottom: 10px;
 }
-.thankyou-text{
-    margin-bottom: 20px;
-}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -152,8 +161,4 @@ ul{
          color: hsl(228, 45%, 44%); 
         }
 
-        @media (min-width:500px){
-            .container{
-                max-width: 480px;
-            }
-        }
+        
