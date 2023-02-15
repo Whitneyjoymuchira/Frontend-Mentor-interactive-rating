@@ -62,17 +62,22 @@ body{
      
     
 }
-.starred{
+.btn{
     background-color: rgb(62, 62, 88);
     border-radius: 50%;
-    padding:0.4rem;
+    padding:10px;
+    border: none;
+    border-width: 80px;
+    cursor: pointer;
 }
-.number{
+ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     font-size: smaller;
+    border-style: none;
+    list-style: none;
     
     
 }
@@ -80,6 +85,7 @@ body{
     background-color: rgb(62, 62, 88);
     padding: 0.9rem;
     border-radius:50%;
+    
 
 }
 .submit{
