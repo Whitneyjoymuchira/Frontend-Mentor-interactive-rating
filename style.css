@@ -92,13 +92,20 @@ ul{
 }
   .container ul li button{
     background-color: rgb(62, 62, 88);
-    padding: 0.9rem;
+    padding: 0.2rem;
     border-radius:50%;
     width: 2.5rem;
     height:2.5rem ;
-    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
     
+}
 
+.container ul li button:hover{
+    background-color: var(--orange);
+}
+.container ul li button:focus{
+    background-color: var(--medium-grey);
 }
 .submit{
     margin-top: 30px;
@@ -121,9 +128,9 @@ ul{
 
 .rating{
     margin: 20px;
-    border-radius: 15px;
+    border-radius: 13px;
     border-style: none;
-    background-color: rgb(62, 62, 88);
+    background-color:hsl(216, 8%, 25%);
     color: var(--orange);
     font-size: 15px;
     padding:5px;
