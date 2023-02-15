@@ -21,6 +21,8 @@
     font-family: inherit;
     font-weight: 300;
     text-align: center;
+    line-height: 1.8;
+    color: var(--light-grey);
 }
 .container h1{
     margin: 10px ;
@@ -41,6 +43,7 @@ body{
     text-align: center;
     height: calc(100vh - 0.1px);
     color: var(--white);
+    margin: 1.5rem;
 }
 
 .container, .thankyou-state{
@@ -51,6 +54,7 @@ body{
     height:345px;
     width: 290px;
 
+
   
 }
 .star{
@@ -58,9 +62,12 @@ body{
     align-items: flex-start;
     flex-direction: row;
     border: none;
-   
-     
     
+}
+.starred{
+    background-color: rgb(62, 62, 88);
+    border-radius: 50%;
+    padding: 0.5rem;
 }
 .btn{
     background-color: rgb(62, 62, 88);
@@ -75,17 +82,21 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: smaller;
     border-style: none;
     list-style: none;
     
     
 }
-.number >div{
+  .container ul li button{
     background-color: rgb(62, 62, 88);
     padding: 0.9rem;
     border-radius:50%;
+    width: 2.5rem;
+    height:2.5rem ;
+    text-align: center;
     
 
 }
@@ -106,11 +117,7 @@ ul{
     margin-top: 10px;
 }
 
-@media (min-width:500px){
-    .container{
-        max-width: 480px;
-    }
-}
+
 
 .rating{
     margin: 20px;
@@ -136,4 +143,10 @@ ul{
 }
     .attribution a {
          color: hsl(228, 45%, 44%); 
+        }
+
+        @media (min-width:500px){
+            .container{
+                max-width: 480px;
+            }
         }
