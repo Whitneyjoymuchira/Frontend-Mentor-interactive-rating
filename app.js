@@ -7,3 +7,9 @@ submitButton.addEventListener('click',()=>{
     thanksContainer.classList.remove('hidden')
     mainContainer.style.display="none"
 })
+
+rateAgain.addEventListener('click', ()=>{
+    thanksContainer.classList.add("hidden")
+    mainContainer.style.display="block"
+})
+
