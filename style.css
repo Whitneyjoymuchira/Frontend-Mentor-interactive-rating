@@ -50,6 +50,9 @@ body{
 img{
     max-width: 100%;
 }
+.hidden{
+    display: none;
+}
 
 .container,.thankyou-state{
     
@@ -119,6 +122,8 @@ ul{
     margin-top: 2rem;
     color: white;
     font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing:0.1rem ;
     
 }
 
@@ -139,23 +144,27 @@ ul{
 
 .rating{
     margin: 20px;
-    border-radius: 13px;
+    border-radius: 30px;
     border-style: none;
-    background-color:hsl(216, 8%, 25%);
+    background-color:hsl(213, 20%, 23%);
     color: var(--orange);
     font-size: 15px;
-    padding:5px;
+    padding:0.2rem 0.5rem 0 ;
 }
 
 .thankyou{
     font-size: 18px;
     margin-bottom: 10px;
 }
+.thankyou-state img{
+    display: block;
+    margin: 0 auto 2rem;
+}
 
 
 .attribution { 
     font-size: 11px; text-align: center; 
-    margin-top: 90px;
+    margin-top: 40px;
 }
     .attribution a {
          color: hsl(228, 45%, 44%); 
